@@ -69,7 +69,6 @@ def train_and_test_model(data, vocabularies, epochs, model, prediction_model, pr
 # -- EXPERIMENT TYPES -- #
 
 # Utility function for performing a k-fold cross-validation experiment on a single dataset
-# NOTE: It will raise an error if AMT has not been previously evaluated on ScenarioX and the files has not been copied to the rest of scenarios
 def k_fold_experiment(epochs):
     keras.backend.clear_session()
     gc.collect()
